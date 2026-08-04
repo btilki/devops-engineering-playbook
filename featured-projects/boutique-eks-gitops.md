@@ -20,7 +20,7 @@ Production-inspired GitOps platform on Amazon EKS. Demonstrates Git-driven deplo
 | Architecture note | [aws-eks-gitops](../architecture/aws-eks-gitops.md) |
 | Lab entry | [labs](../labs/README.md) |
 | Related articles | [E1](../articles/E1.md), [E2](../articles/E2.md), [E3](../articles/E3.md), [X1](../articles/X1.md), [X2](../articles/X2.md) |
-| Related book chapters | TBD — map in `books/` |
+| Related book chapters | [DevOps D11/D12](../books/devops.md), [Platform](../books/platform.md) |
 
 ## Why it exists
 

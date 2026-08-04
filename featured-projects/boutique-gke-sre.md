@@ -20,7 +20,7 @@ Reliability-oriented platform on Google Kubernetes Engine. Focuses on observabil
 | Architecture note | [gcp-gke-sre](../architecture/gcp-gke-sre.md) |
 | Lab entry | [labs](../labs/README.md) |
 | Related articles | [G1](../articles/G1.md), [G2](../articles/G2.md), [G3](../articles/G3.md), [X1](../articles/X1.md), [X2](../articles/X2.md) |
-| Related book chapters | TBD — map in `books/` |
+| Related book chapters | [SRE](../books/sre.md) (esp. R1, R2, R10) |
 
 ## Why it exists
 

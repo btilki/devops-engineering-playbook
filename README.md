@@ -91,16 +91,16 @@ Companion learning material that reinforces the same engineering practices throu
 
 ## Books
 
-Practical books aligned with the projects and labs. Detailed indexes live under [`books/`](./books/).
+Workshop books from [learn-devops-by-building](https://github.com/btilki/learn-devops-by-building). Detailed indexes live under [`books/`](./books/).
 
-| Book area | Audience | Themes |
-|-----------|----------|--------|
-| DevOps | Intermediate engineers | Containers, CI/CD, Terraform, Kubernetes |
-| GitOps / Cloud platforms | Intermediate–advanced | EKS, Helm, Argo CD, delivery patterns |
-| DevSecOps | Intermediate–advanced | Shift-left security, scanning, policy |
-| SRE | Intermediate–advanced | Reliability, observability, operations |
+| Book | Audience | Themes |
+|------|----------|--------|
+| [DevOps Engineering](./books/devops.md) | Intermediate | CI/CD, IaC, Kubernetes, GitOps, multi-cloud |
+| [DevSecOps](./books/devsecops.md) | Intermediate–advanced | Secrets, supply chain, policy, identity |
+| [SRE](./books/sre.md) | Intermediate–advanced | SLOs, alerting, incidents, chaos, DR |
+| [Platform Engineering](./books/platform.md) | Intermediate–advanced | Golden paths, environments, governance, DX |
 
-See: [books/README.md](./books/README.md)
+See: [books/README.md](./books/README.md) · [SERIES.md](https://github.com/btilki/learn-devops-by-building/blob/main/SERIES.md)
 
 ---
 

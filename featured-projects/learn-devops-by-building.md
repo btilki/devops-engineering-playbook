@@ -18,7 +18,7 @@ Companion learning material that reinforces DevOps practices through structured,
 |----------|--------|
 | Learning paths | [../learning-paths/](../learning-paths/) |
 | Related articles | TBD — map in `articles/` |
-| Related book chapters | TBD — map in `books/` |
+| Related book chapters | Full series: [books/](../books/) |
 
 ## Why it exists
 

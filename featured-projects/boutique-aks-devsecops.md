@@ -20,7 +20,7 @@ Security-first Kubernetes delivery on Azure Kubernetes Service. Emphasizes shift
 | Architecture note | [azure-aks-devsecops](../architecture/azure-aks-devsecops.md) |
 | Lab entry | [labs](../labs/README.md) |
 | Related articles | [A1](../articles/A1.md), [A2](../articles/A2.md), [A3](../articles/A3.md), [X1](../articles/X1.md), [X2](../articles/X2.md) |
-| Related book chapters | TBD — map in `books/` |
+| Related book chapters | [DevSecOps](../books/devsecops.md) (esp. S5, S6, S9) |
 
 ## Why it exists
 
