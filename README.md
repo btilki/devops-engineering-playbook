@@ -241,7 +241,7 @@ I learn by building real systems, deepen understanding through documentation and
 
 - **GitHub:** [github.com/btilki](https://github.com/btilki)
 - **Featured projects:** links in the section above
-- **LinkedIn:** add your profile URL here
+- **LinkedIn:** [linkedin.com/in/birol-tilki-48731326](https://www.linkedin.com/in/birol-tilki-48731326/)
 
 ---
 
