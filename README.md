@@ -8,6 +8,18 @@ This repository is the central hub for my production-inspired cloud projects, pr
 
 ---
 
+## Start here
+
+**New here?**
+
+| If you are… | Do this |
+|-------------|---------|
+| **Recruiter / hiring manager** | 1) [Featured Projects](#featured-projects) → 2) [Learning Matrix](#learning-matrix) → 3) one [Technical Article](./articles/) → 4) [Books](#books) |
+| **Engineer learning** | Open the [Learning Matrix](#learning-matrix), pick a row, follow **Read → Build → Practice** |
+| **Comparing clouds** | [Architecture Gallery](#architecture-gallery) + articles [X1](./articles/X1.md) / [X2](./articles/X2.md) |
+
+---
+
 ## Mission
 
 Help engineers move beyond toy tutorials by learning how real multi-cloud platforms are designed, automated, secured, and operated.
@@ -48,17 +60,39 @@ If you are a recruiter, hiring manager, or engineer evaluating my work, start he
 
 ---
 
+## Learning Matrix
+
+**Signature view of this playbook:** pick what you want to learn, then follow Read → Build → Practice.
+
+| I want to learn… | Read | Build | Practice |
+|------------------|------|-------|----------|
+| **GitOps** | [DevOps book](./books/devops.md) (D11–D12) | [Boutique EKS GitOps](https://github.com/btilki/boutique-eks-gitops) | [E1](./articles/E1.md), [E2](./articles/E2.md), [E3](./articles/E3.md) |
+| **DevSecOps** | [DevSecOps book](./books/devsecops.md) | [Boutique AKS DevSecOps](https://github.com/btilki/boutique-aks-devsecops) | [A1](./articles/A1.md), [A2](./articles/A2.md), [A3](./articles/A3.md) |
+| **SRE** | [SRE book](./books/sre.md) | [Boutique GKE SRE](https://github.com/btilki/boutique-gke-sre) | [G1](./articles/G1.md), [G2](./articles/G2.md), [G3](./articles/G3.md) |
+| **Platform / multi-cloud** | [Platform book](./books/platform.md) | All boutique platforms + [playbook](./) | [X1](./articles/X1.md), [X2](./articles/X2.md) |
+| **DevOps foundations** | [DevOps book](./books/devops.md) | [learn-devops-by-building](https://github.com/btilki/learn-devops-by-building) | Sampler in [SERIES.md](https://github.com/btilki/learn-devops-by-building/blob/main/SERIES.md) |
+
+Full matrix notes: [learning-paths/learning-matrix.md](./learning-paths/learning-matrix.md)
+
+---
+
 ## Featured Projects
 
 Three cloud boutique platforms plus a learning-by-building companion.
+
+| Project | Focus | Cloud | What you’ll learn | Brief |
+|---------|-------|-------|-------------------|--------|
+| [Boutique EKS GitOps](https://github.com/btilki/boutique-eks-gitops) | GitOps | AWS | Digest-only delivery, Argo CD, Terraform, progressive delivery (no mesh required) | [notes](./featured-projects/boutique-eks-gitops.md) |
+| [Boutique AKS DevSecOps](https://github.com/btilki/boutique-aks-devsecops) | DevSecOps | Azure | Supply-chain security, Kyverno, Trivy, Cosign, GitHub + Azure DevOps | [notes](./featured-projects/boutique-aks-devsecops.md) |
+| [Boutique GKE SRE](https://github.com/btilki/boutique-gke-sre) | SRE | GCP | SLIs/SLOs, burn-rate alerting, PagerDuty, observability, keyless CI | [notes](./featured-projects/boutique-gke-sre.md) |
+| [Learn DevOps by Building](https://github.com/btilki/learn-devops-by-building) | Learning | Multi | Workshop chapters with a shared Problem→Build→Observe spine | [notes](./featured-projects/learn-devops-by-building.md) |
 
 ### 1. Boutique EKS GitOps (AWS)
 
 Production-inspired GitOps on Amazon EKS: Git-driven delivery, Helm, and platform patterns for real environments.
 
 - **Repository:** [btilki/boutique-eks-gitops](https://github.com/btilki/boutique-eks-gitops)
-- **Cloud:** AWS
-- **Focus:** GitOps, EKS, continuous delivery
+- **Hard rule:** CI never deploys — digests land via Git; Argo CD reconciles
 - **Playbook notes:** [featured-projects/boutique-eks-gitops.md](./featured-projects/boutique-eks-gitops.md)
 
 ### 2. Boutique AKS DevSecOps (Azure)
@@ -66,8 +100,7 @@ Production-inspired GitOps on Amazon EKS: Git-driven delivery, Helm, and platfor
 Security-first delivery on Azure Kubernetes Service: shift-left scanning, policy, and DevSecOps workflows.
 
 - **Repository:** [btilki/boutique-aks-devsecops](https://github.com/btilki/boutique-aks-devsecops)
-- **Cloud:** Azure
-- **Focus:** DevSecOps, AKS, policy as code
+- **Hard rule:** Unsigned / non-compliant images should not reach the cluster
 - **Playbook notes:** [featured-projects/boutique-aks-devsecops.md](./featured-projects/boutique-aks-devsecops.md)
 
 ### 3. Boutique GKE SRE (GCP)
@@ -75,16 +108,14 @@ Security-first delivery on Azure Kubernetes Service: shift-left scanning, policy
 Reliability and operations on Google Kubernetes Engine: observability, SLOs, and SRE practices.
 
 - **Repository:** [btilki/boutique-gke-sre](https://github.com/btilki/boutique-gke-sre)
-- **Cloud:** GCP
-- **Focus:** SRE, GKE, observability
+- **Hard rule:** Deployed ≠ reliable — SLOs, paging, and runbooks required
 - **Playbook notes:** [featured-projects/boutique-gke-sre.md](./featured-projects/boutique-gke-sre.md)
 
 ### 4. Learn DevOps by Building
 
-Companion learning material that reinforces the same engineering practices through structured building.
+Companion workshop books that reinforce the same engineering practices through structured building.
 
 - **Repository:** [btilki/learn-devops-by-building](https://github.com/btilki/learn-devops-by-building)
-- **Focus:** Hands-on learning paths and practice
 - **Playbook notes:** [featured-projects/learn-devops-by-building.md](./featured-projects/learn-devops-by-building.md)
 
 ---
@@ -93,12 +124,12 @@ Companion learning material that reinforces the same engineering practices throu
 
 Workshop books from [learn-devops-by-building](https://github.com/btilki/learn-devops-by-building). Detailed indexes live under [`books/`](./books/).
 
-| Book | Audience | Themes |
-|------|----------|--------|
-| [DevOps Engineering](./books/devops.md) | Intermediate | CI/CD, IaC, Kubernetes, GitOps, multi-cloud |
-| [DevSecOps](./books/devsecops.md) | Intermediate–advanced | Secrets, supply chain, policy, identity |
-| [SRE](./books/sre.md) | Intermediate–advanced | SLOs, alerting, incidents, chaos, DR |
-| [Platform Engineering](./books/platform.md) | Intermediate–advanced | Golden paths, environments, governance, DX |
+| Book | Who is this for? | Themes |
+|------|------------------|--------|
+| [DevOps Engineering](./books/devops.md) | Intermediate engineers building delivery foundations (strong juniors welcome via sampler) | CI/CD, IaC, Kubernetes, GitOps, multi-cloud |
+| [DevSecOps](./books/devsecops.md) | Intermediate engineers embedding security into delivery | Secrets, supply chain, policy, identity |
+| [SRE](./books/sre.md) | Intermediate–advanced engineers owning reliability | SLOs, alerting, incidents, chaos, DR |
+| [Platform Engineering](./books/platform.md) | Intermediate–advanced engineers building internal platforms | Golden paths, environments, governance, DX |
 
 See: [books/README.md](./books/README.md) · [SERIES.md](https://github.com/btilki/learn-devops-by-building/blob/main/SERIES.md)
 
@@ -106,11 +137,14 @@ See: [books/README.md](./books/README.md) · [SERIES.md](https://github.com/btil
 
 ## Technical Articles
 
-Focused technical writing (including Medium publications) mapped to projects and domains.
+Focused technical writing mapped to projects and domains. Full index: [articles/README.md](./articles/README.md)
 
-Browse the index: [articles/README.md](./articles/README.md)
-
-Articles are grouped by theme (GitOps, DevSecOps, SRE, Platform Engineering) rather than by publication channel.
+| ID | Theme | Est. read | Project |
+|----|-------|-----------|---------|
+| [E1](./articles/E1.md)–[E3](./articles/E3.md) | GitOps | ~7–10 min each | EKS |
+| [A1](./articles/A1.md)–[A3](./articles/A3.md) | DevSecOps | ~7–10 min each | AKS |
+| [G1](./articles/G1.md)–[G3](./articles/G3.md) | SRE | ~8–12 min each | GKE |
+| [X1](./articles/X1.md)–[X2](./articles/X2.md) | Multi-cloud / platform | ~8–12 min each | All |
 
 ---
 
@@ -119,9 +153,21 @@ Articles are grouped by theme (GitOps, DevSecOps, SRE, Platform Engineering) rat
 Suggested routes for engineers who want a structured progression.
 
 ```text
-Containers → Kubernetes → Terraform / IaC
-        → GitOps → Security (DevSecOps)
-        → Observability / SRE → Platform Engineering
+Junior / early DevOps
+        ↓
+Containers
+        ↓
+Kubernetes
+        ↓
+Terraform / IaC
+        ↓
+GitOps
+        ↓
+Security (DevSecOps)
+        ↓
+Observability / SRE
+        ↓
+Platform Engineering
 ```
 
 Path outlines:
@@ -130,8 +176,9 @@ Path outlines:
 - [GitOps Practitioner](./learning-paths/gitops-practitioner.md)
 - [DevSecOps Engineer](./learning-paths/devsecops-engineer.md)
 - [Site Reliability Engineer](./learning-paths/site-reliability-engineer.md)
+- [Learning Matrix](./learning-paths/learning-matrix.md)
 
-Index: [learning-paths/README.md](./learning-paths/README.md)
+Index: [learning-paths/README.md](./learning-paths/README.md) · Roadmaps: [roadmaps/](./roadmaps/)
 
 ---
 
@@ -165,7 +212,7 @@ Lab guides: [labs/README.md](./labs/README.md)
 
 ## Recommended Reading Order
 
-1. This README (orientation)
+1. This README — especially [Start here](#start-here) and [Learning Matrix](#learning-matrix)
 2. [Featured projects](./featured-projects/) matching your cloud interest
 3. Matching [architecture](./architecture/) note
 4. Related [learning path](./learning-paths/)
@@ -217,7 +264,7 @@ devops-engineering-playbook/
 ├── featured-projects/        ← project briefs + links
 ├── books/                    ← book indexes
 ├── articles/                 ← technical article index
-├── learning-paths/           ← structured skill paths
+├── learning-paths/           ← structured skill paths + learning matrix
 ├── architecture/             ← multi-cloud architecture notes
 ├── labs/                     ← hands-on lab entry points
 ├── roadmaps/                 ← longer-term skill roadmaps
@@ -226,6 +273,28 @@ devops-engineering-playbook/
 ```
 
 > **Note:** A local `campaign/` directory may exist for LinkedIn drafts, outreach templates, and application tracking. It is private and not part of the published playbook.
+
+---
+
+## FAQ
+
+**Why three cloud platforms instead of one?**  
+One application family, three lenses: GitOps (EKS), DevSecOps (AKS), SRE (GKE). Multi-cloud here means comparable engineering questions — not logo collecting.
+
+**Which project should I start with?**  
+Match the job you want: AWS/GitOps → EKS; Azure/security → AKS; GCP/reliability → GKE. Unsure → [Learning Matrix](#learning-matrix).
+
+**Can I use these projects for learning?**  
+Yes. Follow each repo’s docs and licenses. Infra may be torn down; the Git history, ADRs, and runbooks are the lasting artifacts.
+
+**Are the books free?**  
+The workshop materials in [learn-devops-by-building](https://github.com/btilki/learn-devops-by-building) are published under that repository’s license (CC BY 4.0) — see upstream README.
+
+**How are articles connected to the repositories?**  
+Each article ID (E/A/G/X) maps to a project and theme in [articles/](./articles/). The [Learning Matrix](#learning-matrix) shows Read → Build → Practice in one view.
+
+**Is the infrastructure still running?**  
+Pilots were validated then decommissioned where noted in each project README. Expect docs and screenshots, not vanity DNS.
 
 ---
 
@@ -251,4 +320,4 @@ If these resources help you in your DevOps journey, consider starring the reposi
 
 ---
 
-*DevOps Engineering Playbook v1.0 — Learn by Building. Master by Practicing. Share by Teaching.*
+*DevOps Engineering Playbook **v1.1** — Start Here + Learning Matrix — Learn by Building. Master by Practicing. Share by Teaching.*

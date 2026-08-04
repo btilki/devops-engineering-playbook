@@ -4,6 +4,7 @@ Structured routes from fundamentals to platform-level practice.
 
 | Path | Outcome |
 |------|---------|
+| [Learning Matrix](./learning-matrix.md) | Read → Build → Practice in one table |
 | [DevOps Engineer](./devops-engineer.md) | Automation, CI/CD, IaC, Kubernetes foundations |
 | [GitOps Practitioner](./gitops-practitioner.md) | Git-driven delivery on Kubernetes |
 | [DevSecOps Engineer](./devsecops-engineer.md) | Shift-left security and policy as code |

@@ -6,10 +6,10 @@ Workshop books from **[Learn DevOps by Building](https://github.com/btilki/learn
 Problem → Design → Build → Observe → Incident → Security Hardening → Production Notes → Summary
 ```
 
-| Book | Audience | Chapters | Playbook page |
-|------|----------|----------|---------------|
-| [DevOps Engineering](./devops.md) | Intermediate | 15 (D1–D15) | CI/CD, IaC, Kubernetes, GitOps, multi-cloud |
-| [DevSecOps](./devsecops.md) | Intermediate–advanced | 12 (S1–S12) | Secrets, supply chain, policy, identity |
+| Book | Who is this for? | Chapters | Playbook page |
+|------|------------------|----------|---------------|
+| [DevOps Engineering](./devops.md) | Intermediate (strong juniors via [SERIES.md](https://github.com/btilki/learn-devops-by-building/blob/main/SERIES.md) sampler) | 15 (D1–D15) | CI/CD, IaC, Kubernetes, GitOps, multi-cloud |
+| [DevSecOps](./devsecops.md) | Intermediate | 12 (S1–S12) | Secrets, supply chain, policy, identity |
 | [SRE](./sre.md) | Intermediate–advanced | 11 (R1–R11) | SLOs, alerting, incidents, chaos, DR |
 | [Platform Engineering](./platform.md) | Intermediate–advanced | 10 (P1–P10) | Golden paths, environments, governance, DX |
 
