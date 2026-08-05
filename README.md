@@ -164,15 +164,15 @@ Index: [learning-paths/README.md](./learning-paths/README.md) · Roadmaps: [road
 
 ## Architecture Gallery
 
-Reference architectures for the three boutique platforms — same design language across clouds.
+Reference architectures for the three boutique platforms — same design language, different lens. Mermaid diagrams render on GitHub.
 
-| Cloud | Platform | Notes |
-|-------|----------|--------|
-| AWS | EKS + GitOps | [architecture/aws-eks-gitops.md](./architecture/aws-eks-gitops.md) |
-| Azure | AKS + DevSecOps | [architecture/azure-aks-devsecops.md](./architecture/azure-aks-devsecops.md) |
-| GCP | GKE + SRE | [architecture/gcp-gke-sre.md](./architecture/gcp-gke-sre.md) |
+| Cloud | Lens | Hard rule | Notes |
+|-------|------|-----------|--------|
+| AWS | GitOps | CI never deploys | [aws-eks-gitops.md](./architecture/aws-eks-gitops.md) |
+| Azure | DevSecOps | Unsigned images do not run | [azure-aks-devsecops.md](./architecture/azure-aks-devsecops.md) |
+| GCP | SRE | Deployed ≠ reliable | [gcp-gke-sre.md](./architecture/gcp-gke-sre.md) |
 
-Index: [architecture/README.md](./architecture/README.md)
+Multi-cloud map + index: [architecture/README.md](./architecture/README.md)
 
 ---
 
