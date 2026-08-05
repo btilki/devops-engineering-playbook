@@ -33,6 +33,17 @@ This playbook connects:
 
 ---
 
+## Engineering principles
+
+- Automate everything that should not depend on memory
+- Infrastructure as Code — no snowflake environments
+- Git as the source of truth for what runs
+- Security by default — shift left, enforce at admission
+- Reliability before vanity scale — measure what users feel
+- Documentation as code — ADRs, runbooks, and teardown honesty
+
+---
+
 ## Why this repository?
 
 Most portfolios list repositories. This one explains how they fit together.
@@ -78,7 +89,7 @@ Full matrix notes: [learning-paths/learning-matrix.md](./learning-paths/learning
 
 ## Featured Projects
 
-Three cloud boutique platforms plus a learning-by-building companion.
+Three cloud boutique platforms plus a learning-by-building companion. Detail lives under [`featured-projects/`](./featured-projects/).
 
 | Project | Focus | Cloud | What you’ll learn | Brief |
 |---------|-------|-------|-------------------|--------|
@@ -87,49 +98,18 @@ Three cloud boutique platforms plus a learning-by-building companion.
 | [Boutique GKE SRE](https://github.com/btilki/boutique-gke-sre) | SRE | GCP | SLIs/SLOs, burn-rate alerting, PagerDuty, observability, keyless CI | [notes](./featured-projects/boutique-gke-sre.md) |
 | [Learn DevOps by Building](https://github.com/btilki/learn-devops-by-building) | Learning | Multi | Workshop chapters with a shared Problem→Build→Observe spine | [notes](./featured-projects/learn-devops-by-building.md) |
 
-### 1. Boutique EKS GitOps (AWS)
-
-Production-inspired GitOps on Amazon EKS: Git-driven delivery, Helm, and platform patterns for real environments.
-
-- **Repository:** [btilki/boutique-eks-gitops](https://github.com/btilki/boutique-eks-gitops)
-- **Hard rule:** CI never deploys — digests land via Git; Argo CD reconciles
-- **Playbook notes:** [featured-projects/boutique-eks-gitops.md](./featured-projects/boutique-eks-gitops.md)
-
-### 2. Boutique AKS DevSecOps (Azure)
-
-Security-first delivery on Azure Kubernetes Service: shift-left scanning, policy, and DevSecOps workflows.
-
-- **Repository:** [btilki/boutique-aks-devsecops](https://github.com/btilki/boutique-aks-devsecops)
-- **Hard rule:** Unsigned / non-compliant images should not reach the cluster
-- **Playbook notes:** [featured-projects/boutique-aks-devsecops.md](./featured-projects/boutique-aks-devsecops.md)
-
-### 3. Boutique GKE SRE (GCP)
-
-Reliability and operations on Google Kubernetes Engine: observability, SLOs, and SRE practices.
-
-- **Repository:** [btilki/boutique-gke-sre](https://github.com/btilki/boutique-gke-sre)
-- **Hard rule:** Deployed ≠ reliable — SLOs, paging, and runbooks required
-- **Playbook notes:** [featured-projects/boutique-gke-sre.md](./featured-projects/boutique-gke-sre.md)
-
-### 4. Learn DevOps by Building
-
-Companion workshop books that reinforce the same engineering practices through structured building.
-
-- **Repository:** [btilki/learn-devops-by-building](https://github.com/btilki/learn-devops-by-building)
-- **Playbook notes:** [featured-projects/learn-devops-by-building.md](./featured-projects/learn-devops-by-building.md)
-
 ---
 
 ## Books
 
 Workshop books from [learn-devops-by-building](https://github.com/btilki/learn-devops-by-building). Detailed indexes live under [`books/`](./books/).
 
-| Book | Who is this for? | Themes |
-|------|------------------|--------|
-| [DevOps Engineering](./books/devops.md) | Intermediate engineers building delivery foundations (strong juniors welcome via sampler) | CI/CD, IaC, Kubernetes, GitOps, multi-cloud |
-| [DevSecOps](./books/devsecops.md) | Intermediate engineers embedding security into delivery | Secrets, supply chain, policy, identity |
-| [SRE](./books/sre.md) | Intermediate–advanced engineers owning reliability | SLOs, alerting, incidents, chaos, DR |
-| [Platform Engineering](./books/platform.md) | Intermediate–advanced engineers building internal platforms | Golden paths, environments, governance, DX |
+| Book | Difficulty | Who is this for? | Themes |
+|------|------------|------------------|--------|
+| [DevOps Engineering](./books/devops.md) | Beginner–Intermediate | Engineers building delivery foundations (sampler-friendly) | CI/CD, IaC, Kubernetes, GitOps, multi-cloud |
+| [DevSecOps](./books/devsecops.md) | Intermediate | Engineers embedding security into delivery | Secrets, supply chain, policy, identity |
+| [SRE](./books/sre.md) | Intermediate–Advanced | Engineers owning reliability | SLOs, alerting, incidents, chaos, DR |
+| [Platform Engineering](./books/platform.md) | Advanced | Engineers building internal platforms | Golden paths, environments, governance, DX |
 
 See: [books/README.md](./books/README.md) · [SERIES.md](https://github.com/btilki/learn-devops-by-building/blob/main/SERIES.md)
 
@@ -141,10 +121,10 @@ Focused technical writing mapped to projects and domains. Full index: [articles/
 
 | ID | Theme | Est. read | Project |
 |----|-------|-----------|---------|
-| [E1](./articles/E1.md)–[E3](./articles/E3.md) | GitOps | ~7–10 min each | EKS |
-| [A1](./articles/A1.md)–[A3](./articles/A3.md) | DevSecOps | ~7–10 min each | AKS |
-| [G1](./articles/G1.md)–[G3](./articles/G3.md) | SRE | ~8–12 min each | GKE |
-| [X1](./articles/X1.md)–[X2](./articles/X2.md) | Multi-cloud / platform | ~8–12 min each | All |
+| [E1](./articles/E1.md) (~8 min) · [E2](./articles/E2.md) (~10 min) · [E3](./articles/E3.md) (~7 min) | GitOps | — | EKS |
+| [A1](./articles/A1.md) (~8 min) · [A2](./articles/A2.md) (~9 min) · [A3](./articles/A3.md) (~6 min) | DevSecOps | — | AKS |
+| [G1](./articles/G1.md) (~10 min) · [G2](./articles/G2.md) (~8 min) · [G3](./articles/G3.md) (~9 min) | SRE | — | GKE |
+| [X1](./articles/X1.md) (~10 min) · [X2](./articles/X2.md) (~9 min) | Multi-cloud | — | All |
 
 ---
 
@@ -320,4 +300,4 @@ If these resources help you in your DevOps journey, consider starring the reposi
 
 ---
 
-*DevOps Engineering Playbook **v1.1** — Start Here + Learning Matrix — Learn by Building. Master by Practicing. Share by Teaching.*
+*DevOps Engineering Playbook **v1.1** — structure frozen; improve content quality next — Learn by Building. Master by Practicing. Share by Teaching.*

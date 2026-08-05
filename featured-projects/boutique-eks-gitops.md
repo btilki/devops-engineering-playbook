@@ -6,6 +6,10 @@
 
 Production-inspired GitOps platform on Amazon EKS. Demonstrates Git-driven deployments, Helm packaging, and delivery patterns closer to real production environments than typical “hello world” tutorials.
 
+## Hard rule
+
+**CI never deploys.** Pipelines produce digest-only merge requests; Argo CD reconciles from Git.
+
 ## Focus areas
 
 - Amazon EKS

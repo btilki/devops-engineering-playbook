@@ -6,6 +6,10 @@
 
 Security-first Kubernetes delivery on Azure Kubernetes Service. Emphasizes shift-left scanning, policy as code, and DevSecOps workflows integrated into the platform lifecycle.
 
+## Hard rule
+
+**Unsigned / non-compliant images should not reach the cluster.** Sign in CI; enforce at admission.
+
 ## Focus areas
 
 - Azure Kubernetes Service (AKS)

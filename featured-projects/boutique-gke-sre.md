@@ -6,6 +6,10 @@
 
 Reliability-oriented platform on Google Kubernetes Engine. Focuses on observability, operational readiness, and SRE practices for production-inspired workloads.
 
+## Hard rule
+
+**Deployed ≠ reliable.** SLOs, burn-rate alerts, and runbooks are part of the platform story.
+
 ## Focus areas
 
 - Google Kubernetes Engine (GKE)
