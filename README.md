@@ -14,9 +14,9 @@ This repository is the central hub for my production-inspired cloud projects, pr
 
 | If you are… | Do this |
 |-------------|---------|
-| **Recruiter / hiring manager** | 1) [Featured Projects](#featured-projects) → 2) [Learning Matrix](#learning-matrix) → 3) one [Technical Article](./articles/) → 4) [Books](#books) |
 | **Engineer learning** | Open the [Learning Matrix](#learning-matrix), pick a row, follow **Read → Build → Practice** |
 | **Comparing clouds** | [Architecture Gallery](#architecture-gallery) + articles [X1](./articles/X1.md) / [X2](./articles/X2.md) |
+| **Reviewing the portfolio** | 1) [Featured Projects](#featured-projects) → 2) [Learning Matrix](#learning-matrix) → 3) one [Technical Article](./articles/) → 4) [Books](#books) |
 
 ---
 
@@ -53,9 +53,9 @@ Most portfolios list repositories. This one explains how they fit together.
 | Scattered repos | One narrative across AWS, Azure, and GCP |
 | Projects without context | Projects mapped to books, articles, and labs |
 | “I used Kubernetes” | GitOps, DevSecOps, and SRE practiced end to end |
-| Hard for recruiters to navigate | A single entry point for technical depth |
+| Hard to see how the pieces connect | A single entry point for projects, articles, and practice |
 
-If you are a recruiter, hiring manager, or engineer evaluating my work, start here — then dive into the featured projects.
+Start with the [Learning Matrix](#learning-matrix) or a [featured project](#featured-projects), then go as deep as you want.
 
 ---
 
